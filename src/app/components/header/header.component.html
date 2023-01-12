@@ -1,2 +1,35 @@
 <!-- <p>header works!</p> -->
 
+<div class="bg-black text-white p-6 flex items-center">
+    <a class="flex items-center" routerLink="/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWH6znglBpDrBtmwImf3QySbCyVU5-pb4MzCy4Ox6-mK9suaBeQjWiPpMbM6YNKMi20Q&usqp=CAU" width="100px" alt="">
+        CERTUS
+    </a>
+    <ul class="flex items-center mx-auto">
+        <li 
+        class="border-4 border-white rounded-full p-10 mx-10"  
+        [routerLinkActiveOptions]="{exact: true}"
+        routerLinkActive="bg-white text-black"
+        >
+            <a  [routerLink]="['/']">
+                HOME
+            </a>
+        </li>
+        <li 
+        class="border-4 border-white rounded-full p-10 mx-10" 
+        routerLinkActive="bg-white text-black"
+        >
+            <a [routerLink]="['/nosotros']">
+                NOSOTROS
+            </a>
+        </li>
+        <li 
+        class="border-4 border-white rounded-full p-10 mx-10" 
+        routerLinkActive="bg-white text-black"
+        >
+            <a [routerLink]="['/contacto']">
+                CONTACTO
+            </a>
+        </li>        
+    </ul>
+</div>
